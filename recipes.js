@@ -66,14 +66,14 @@ stories.forEach(storyObj => {
 	let container = document.getElementById('container');
 	let article = document.createElement('article');
 	let headline = document.createElement('h3');
-	headline.classList.addClass('headline');
+	headline.classList.add('headline');
 	headline.innerHTML = storyObj.headline;
 	let image = document.createElement('img');
-	image.classList.addClass('photograph')
+	image.classList.add('photograph')
 	image.src = storyObj.imgUrl;
 	image.alt = storyObj.imgAltText;
 	let story = document.createElement('div');
-	story.classList.addClass('story');
+	story.classList.add('story');
 	story.innerHTML = storyObj.text;
 	article.appendChild(headline);
 	article.appendChild(image);
